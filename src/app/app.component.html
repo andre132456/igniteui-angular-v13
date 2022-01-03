@@ -1,0 +1,11 @@
+<igx-tree-grid
+  igxPreventDocumentScroll
+  [data]="localData"
+  primaryKey="id"
+  foreignKey="pid"
+  rowSelection="multiple"
+  displayDensity="compact"
+  (rowSelectionChanging)="setSelectedRow($event)"
+>
+  <igx-column field="name" dataType="string" [hasSummary]="true"></igx-column>
+</igx-tree-grid>
